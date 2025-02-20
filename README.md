@@ -14,7 +14,7 @@ A simple and interactive **Movie Recommendation System** built with **Flask**. I
 - **Backend:** Flask, Pandas  
 - **Frontend:** HTML, CSS, Bootstrap  
 - **Data Processing:** Pickle, NumPy, Pandas
-- **Model Development:** Sci-kit learn
+- **Model Development:** Scikit-learn
 
 ## 📂 Project Structure  
 
