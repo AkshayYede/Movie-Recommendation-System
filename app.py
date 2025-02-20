@@ -7,21 +7,6 @@ if __name__ == "__main__":
 from flask import Flask, render_template, request
 import pickle
 import pandas as pd
-import gdown
-
-# Google Drive file ID
-url = 'https://drive.google.com/file/d/1Yku-PJVMMre5Uv0zXV_r7zsDCrr7bfeI/view?usp=sharing'
-output = "similarity.pkl"
-
-try:
-    with open(output, "rb") as f:
-        similarity = pickle.load(f)
-except:
-    gdown.download(url, output, quiet=False)
-    with open(output, "rb") as f:
-        similarity = pickle.load(f)
-
-print("Similarity.pkl loaded successfully!")
 
 app = Flask(__name__)
 
